@@ -21,11 +21,11 @@ rplot=rlocus(g);
 row3re=real(rplot(3,:));
 row3im=imag(rplot(3,:));
 
-curvy=[row3re;row3im];
-nice=curvy(:,1:54)-line(:,1:54);
+curv1=[row3re;row3im];
+nice=curv1(:,1:54)-line(:,1:54);
 
-resultx=curvy(1,1:54)-line(1,1:54);
-resulty=curvy(2,1:54)-line(2,1:54);
+resultx=curv1(1,1:54)-line(1,1:54);
+resulty=curv1(2,1:54)-line(2,1:54);
 
 result2=(abs(resultx./resulty) - p);
 resind=min(abs(result2));
@@ -40,7 +40,7 @@ plot(re,im);
 hold off
 
 
-%plot(curvy(1,1:54),curvy(2,1:54),'+');
+%plot(curv1(1,1:54),curv1(2,1:54),'+');
 %hold on
 %plot(line(1,1:56),line(2,1:56), '*');
 %hold off
