@@ -22,7 +22,7 @@ row3re=real(rplot(3,:));
 row3im=imag(rplot(3,:));
 
 curv1=[row3re;row3im];
-nice=curv1(:,1:54)-line(:,1:54);
+nce=curv1(:,1:54)-line(:,1:54);
 
 resultx=curv1(1,1:54)-line(1,1:54);
 resulty=curv1(2,1:54)-line(2,1:54);
